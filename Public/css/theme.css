@@ -1,0 +1,92 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap');
+
+/* Navigation Bar */
+.navbar {
+  background-color: #f8f9fa; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.navbar-brand {
+  font-family: 'Monotype Corsiva', cursive; /* Updated font-family */
+  font-weight: bold; /* Added font-weight */
+  color: #333; /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+  font-size: 30px; /* Increased font size for the navbar-brand */
+}
+
+.nav-link {
+  font-family: 'Monotype Corsiva', cursive; /* Updated font-family */
+  font-weight: bold; /* Added font-weight */
+  color: #333; /* Text color */
+  font-size: 24px; /* Increased font size */
+}
+
+.nav-link:hover {
+  color: #777; /* Hover color */
+}
+
+.nav-item.active .nav-link {
+  font-weight: bold; /* Added font-weight for the active link */
+}
+
+/* App Background */
+body, html {
+  background: linear-gradient(to bottom, #64619e, #f8f8f8); /* Fading gradient */
+  overflow: auto; /* Ensure gradient covers entire page */
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #007bff; /* Solid background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Hover background color */
+}
+
+/* Table cells inside "odd" numbered table rows */
+table tr:nth-child(odd) td {
+  background-color: #f2f2f2; /* Background color */
+}
+
+/* All Heading elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Monotype Corsiva', cursive; /* Updated font-family */
+  font-weight: bold; /* Added font-weight */
+  color: #333; /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+/* All Anchor elements (HTML Links) */
+a {
+  color: #007bff; /* Text color */
+}
+
+a:hover {
+  color: #0056b3; /* Hover color */
+}
+
+/* Fieldset Legends */
+legend {
+  padding: 10px 0; /* Padding top and bottom */
+  font-family: 'Monotype Corsiva', cursive; /* Updated font-family */
+  font-weight: bold; /* Added font-weight */
+  color: #333; /* Text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+}
+
+img {
+  width: 100px;
+  border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+}
+
+img.A {
+  width: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
