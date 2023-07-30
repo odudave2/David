@@ -179,6 +179,32 @@ app.post("/student/update", (req, res) => {
       res.status(500).json({ error: "Failed to update student" });
     });
 });
+// GET /htmlDemo
+app.get("/htmlDemo", (req, res) => {
+  collegeData.getAllStudents()
+    .then(students => {
+      const simplifiedStudents = students.map(student => ({
+        studentNum: student.studentNum,
+        firstName: student.firstName,
+        lastName: student.lastName,
+        email: student.email,
+        addressStreet: student.addressStreet,
+        status: student.status,
+        course: student.course,
+      }));
+
+      console.log("simplifiedStudents:", simplifiedStudents); // Add this line for debugging
+
+      if (simplifiedStudents.length > 0) {
+        res.render("htmlDemo", { students: simplifiedStudents, activeRoute: "/htmlDemo" });
+      } else {
+        res.render("htmlDemo", { message: "no results", activeRoute: "/htmlDemo" });
+      }
+    })
+    .catch(() => {
+      res.render("htmlDemo", { message: "no results", activeRoute: "/htmlDemo" });
+    });
+});
 
 
     // 404 route
