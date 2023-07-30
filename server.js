@@ -17,7 +17,7 @@ const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
 
 // To import the express.static middleware
-const staticMiddleware = express.static(path.join(__dirname, "public"));
+const staticMiddleware = express.static(path.join(__dirname, "Public"));
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
