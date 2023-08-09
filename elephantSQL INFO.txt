@@ -1,0 +1,16 @@
+Server	peanut.db.elephantsql.com (peanut-01)
+
+Region	amazon-web-services::us-east-1
+
+Created at	2023-08-06 01:30 UTC+00:00
+
+User & Default database	hdaecgoa
+
+Password: Hkc4Y90O5RjvyFHX3y9FpnJDemIYIGMo
+
+URL:  
+postgres://hdaecgoa:Hkc4Y90O5RjvyFHX3y9FpnJDemIYIGMo@peanut.db.elephantsql.com/hdaecgoa
+
+
+Current database size	
+Max database size	20 MB
